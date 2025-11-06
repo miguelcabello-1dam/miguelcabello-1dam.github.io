@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <style>
+        body {
+            background-color: rgb(207, 147, 223);
+            text-align: center;
+            font-size: 24px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        button.boton-inicio {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            background-color: #fff9a8; /* Amarillo clarito */
+            border: 2px solid #ff00ff; /* Rosa fluorescente */
+            border-radius: 10px; /* Esquinas redondeadas */
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        button.boton-inicio:hover {
+            background-color: #fff06a;
+            box-shadow: 0 0 10px #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Imagen</th>
+            <th>Descripción</th>
+            <th>enlace</th>
+        </tr>
+        <tr>
+            <td><img src="../img/discord.png" alt="discord" height="150" width="150"></td>
+            <td>Una red social</td>
+            <td><a href="http://discord.com/">Discord</a></td>
+        </tr>
+        <tr>
+            <td><img src="../img/steam.png" alt="steam" height="150" width="150"></td>
+            <td>Tienda de licencias de juegos digital</td>
+            <td><a href="https:/store.steampowered.com?l=spanish">Steam</a></td>
+        </tr>
+        <tr>
+            <td><img src="../img/animeflv.jpg" alt="Animeflv" height="150" width="150"></td>
+            <td>Página para ver anime</td>
+            <td><a href="www3.animeflv.net">Animeflv</a></td>
+        </tr>
+    </table>
+    <br>
+    <button class="boton-inicio" onclick="window.location.href='../index.html'">Inicio</button>
+</body>
+</html>
