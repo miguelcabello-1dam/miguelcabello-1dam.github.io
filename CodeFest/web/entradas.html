@@ -19,7 +19,21 @@
         </ul>
     </nav>
     <main>
-        
+        <form action="https://www.w3schools.com/action_page.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <label for="email">Correo electrónico:</label>
+            <input type="text" placeholder="Nombre y Apellidos">
+        </fieldset>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
+
+        <label for="imagen">Subir imagen:</label><br>
+        <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+    </form>
     </main>
     <footer>
         <p>© 2025 CodeFest. Todos los derechos reservados.</p>
