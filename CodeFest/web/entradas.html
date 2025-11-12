@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entradas</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
 <body>
     <header>
@@ -21,18 +22,46 @@
     <main>
         <form action="https://www.w3schools.com/action_page.php" method="post" enctype="multipart/form-data">
         <fieldset>
-            <label for="email">Correo electrónico:</label>
-            <input type="text" placeholder="Nombre y Apellidos">
+            <legend>Datos Personales</legend>
+            <label for="name">Nombre y Apellidos:</label>
+            <input type="text" name="name" placeholder="Nombre y Apellidos">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Email" required>
         </fieldset>
-
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea><br><br>
-
-        <label for="imagen">Subir imagen:</label><br>
-        <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+        <fieldset>
+            <legend>Tipo de Entrada</legend>
+            <label for="tipo_entrada">
+                <input type="radio" name="tipo_entrada" value="general">Abono General (3 Días)
+            </label>
+            <label for="ripo_entrada">
+                <input type="radio" name="tipo_entrada" value="vip">Abono VIP (3 Días)
+            </label>
+            <label for="tipo_entrada">
+                <input type="radio" name="tipo_entrada" value="dia">Entrada de Día
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <label for="extras">
+                <input type="checkbox" name="extras" value="camping">Camping
+            </label>
+            <label for="extras">
+                <input type="checkbox" name="extras" value="merch"> Pack Merchandising
+            </label>
+            <label for="extras">
+                <input type="checkbox" name="extras" value="talleres"> Acceso a Talleres Tech
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Día (Solo si es Entrada de Día)</legend>
+            <label for="dia">Selecciona el día:</label>
+            <select id="dia" name="dia">
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+        </fieldset>
+        <button type="submit">Enviar Solicitud</button>
     </form>
     </main>
     <footer>
